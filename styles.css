@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(270deg, purple 0 30%, rgb(246, 132, 246) 30% 100% )
+}
+
+main {  
+  width: 60vw;
+  background: linear-gradient(to bottom, lightgray 40%, rgb(253, 211, 131) 30%, rgb(250, 229, 189) 90%);  
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.4);
+  border-radius: 0.5rem;
+}
+
+.guide-container {
+  text-align: center;  
+  padding: 0 1.3rem;
+  margin: 5rem 0; 
+}
+
+.guide-container h1 {
+  letter-spacing: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;  
+}
+
+.guide-container h5 {
+  color: lightseagreen;
+  font-size: 1rem;
+}
+
+section {   
+  display: grid;
+  grid-template-rows: 5rem 3rem 2rem;
+  row-gap: 2rem;
+  place-items: center;  
+}
+
+.timer-display { 
+  width: 280px;
+  border: 2px solid rgba(178, 178, 178, 0.73);
+  box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.238);
+  display: flex;
+  font-size: 40px;
+  font-weight: 700; 
+  padding: 0.5rem 1.5rem;  
+  align-items: center;   
+}
+
+.time-container {  
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  justify-content: center;
+} 
+
+.time-container div {
+  margin-left: -12px;
+  color: red;
+}
+
+.time-container input {
+  border: none;
+  width: 50px;
+  font-size: 32px;
+  color: green;
+  margin-left: 10px;
+  background: transparent;
+}
+
+.time-container input:focus {
+  outline: none;
+}
+
+.timer-controler {    
+  height: 6vh;     
+  width: 300px;
+  display: flex;    
+  align-items: center; 
+  justify-content: center;
+}
+
+.timer-controler button { 
+  border: none;  
+  width: 120px;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.start-btn {
+  background-color: skyblue;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.start-btn:hover {
+  background-color: rgb(74, 165, 200)
+}
+
+.start-btn-hide {
+  display: none;    
+}
+
+.switch-btn, .reset-btn  {
+  display: none;  
+}
+
+.switch-btn-show, .reset-btn-show {
+  display: inline;    
+}
+
+.switch-btn-show {
+  background-color: rgb(251, 200, 70);
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.switch-btn-show:hover {
+  background-color: rgb(253, 183, 5);
+}
+
+.reset-btn-show {
+  background-color: lightcoral;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.reset-btn-show:hover {
+  background-color: rgb(230, 83, 83);
+}
+
+.alert-container {
+  width: 500px;
+  text-align: left;
+}
+
+.alert {  
+  display: none;
+}
+
+.alert-show {  
+  display: inline;
+  visibility: visible;
+  color: red;
+  font-weight: 700;
+  font-size: 14px;
+}
+

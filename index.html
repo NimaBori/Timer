@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch Timer</title>  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <div class="guide-container">
+      <h1>Stopwatch timer</h1>
+      <h5>Please type positive numbers for Hour, Minute and Second then click START</h5>
+    </div>
+    <section>
+      <div class="timer-display">
+        <div class="time-container">
+          <label for="hour">H</label>
+          <input type="text" class="hour" placeholder="00" value="0">
+          <div>:</div>
+        </div>
+        
+        <div class="time-container">
+          <label for="minute">M</label>
+          <input type="text" class="minute" placeholder="00" value="0">
+          <div>:</div>
+        </div>
+        
+        <div class="time-container">
+          <label for="secound">S</label>
+          <input type="text" class="secound" placeholder="00" value="0">        
+        </div>
+      </div>
+      <div class="timer-controler">
+        <button class="start-btn">Start</button>
+        <button class="switch-btn">Pause</button>
+        <button class="reset-btn">Reset</button>
+      </div>
+      <div class="alert-container">
+        <p class="alert"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
